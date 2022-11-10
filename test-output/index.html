@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.online.mobile.Mobilenames" class="method navigator-link" hash-for-method="mob5">mob5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.online.mobile.Mobilenames" class="method navigator-link" hash-for-method="mob2">mob2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.online.mobile.Mobilenames" class="method navigator-link" hash-for-method="mob3">mob3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.online.mobile.Mobilenames" class="method navigator-link" hash-for-method="mob4">mob4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.online.mobile.Mobilenames</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="mob5">
+                  </a> <!-- mob5 -->
+                  <span class="method-name">mob5</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.87)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;Dineshs-MBP&apos;, ip: &apos;fe80:0:0:0:8dd:cc1f:22f1:b4db%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [142d24bf164f9b797fb41c70f9afa5ef, clickElement {id=eb88d926-565b-45fc-b1e5-72fa797bb7ce}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/rp/_b1xmpls78z...}, goog:chromeOptions: {debuggerAddress: localhost:50961}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50961/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (142d24bf164f9b797fb41c70f9afa5ef)] -&gt; xpath: (//span[@class=&apos;a-size-medium a-color-base a-text-normal&apos;])[1]]
+Session ID: 142d24bf164f9b797fb41c70f9afa5ef
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.online.mobile.Mobilenames.mob5(Mobilenames.java:134)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.online.mobile.Mobilenames</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="mob2">
+                  </a> <!-- mob2 -->
+                  <span class="method-name">mob2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mob3">
+                  </a> <!-- mob3 -->
+                  <span class="method-name">mob3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mob4">
+                  </a> <!-- mob4 -->
+                  <span class="method-name">mob4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/private/var/folders/rp/_b1xmpls78z9j633v2rsrds80000gn/T/testng-eclipse-1849973754/testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.online.mobile.Mobilenames&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'mob5')
+data.setCell(0, 2, 'com.online.mobile.Mobilenames')
+data.setCell(0, 3, 26571);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'mob3')
+data.setCell(1, 2, 'com.online.mobile.Mobilenames')
+data.setCell(1, 3, 4216);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'mob2')
+data.setCell(2, 2, 'com.online.mobile.Mobilenames')
+data.setCell(2, 3, 2540);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'mob4')
+data.setCell(3, 2, 'com.online.mobile.Mobilenames')
+data.setCell(3, 3, 1190);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.online.mobile.Mobilenames</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">mob1</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">mob2</span>
+                <span class="method-start">5134 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">mob6</span>
+                <span class="method-start">7676 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">mob3</span>
+                <span class="method-start">7677 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">mob6</span>
+                <span class="method-start">11893 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">mob4</span>
+                <span class="method-start">11894 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">mob6</span>
+                <span class="method-start">13085 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">mob5</span>
+                <span class="method-start">13086 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">mob6</span>
+                <span class="method-start">39676 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
